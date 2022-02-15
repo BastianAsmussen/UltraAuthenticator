@@ -1,0 +1,9 @@
+name: UltraAuthenticator
+version: '${version}'
+main: tech.asmussen.ultraauthenticator.core.UltraAuthenticator
+api-version: 1.18
+load: STARTUP
+softdepend: [ Skript ]
+authors: [ BastianA ]
+description: UltraAuthenticator - The ultimate authentication plugin.
+website: https://asmussen.tech
