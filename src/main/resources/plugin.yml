@@ -1,6 +1,6 @@
 name: UltraAuthenticator
 version: '${version}'
-main: tech.asmussen.ultraauthenticator.core.UltraAuthenticator
+main: tech.asmussen.uauth.UltraAuthenticator
 api-version: 1.18
 load: STARTUP
 softdepend: [ Skript ]
