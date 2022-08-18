@@ -1,2 +1,2 @@
 # Ultra Authenticator
-UltraAuthenticator - The ultimate authentication plugin.
+UltraAuthenticator - A Minecraft authentication plugin.
