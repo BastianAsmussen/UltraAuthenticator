@@ -1,0 +1,7 @@
+tech\asmussen\uauth\events\ChatEvent.class
+tech\asmussen\uauth\events\QuitEvent.class
+tech\asmussen\uauth\commands\TFACommand.class
+tech\asmussen\uauth\events\JoinEvent.class
+tech\asmussen\uauth\events\MoveEvent.class
+tech\asmussen\uauth\UltraAuthenticator.class
+tech\asmussen\uauth\events\InteractEvent.class

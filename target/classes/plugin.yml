@@ -1,0 +1,14 @@
+name: UltraAuthenticator
+version: '1.0.0'
+main: tech.asmussen.uauth.UltraAuthenticator
+api-version: 1.19
+prefix: uAuth
+author: BastianA
+description: Ultra Authenticator - A great 2FA solution.
+website: https://github.com/BastianAsmussen/UltraAuthenticator
+
+commands:
+    uauth:
+        aliases: [ auth, 2fa ]
+        description: Enable or disable 2FA for a player.
+        usage: /uauth <player>

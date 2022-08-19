@@ -1,0 +1,32 @@
+settings:
+    admin-permission: uauth.admin
+    use-prefix: true
+    
+messages:
+    server:
+        # The prefix for all messages.
+        prefix: "&8[&b&luAuth&8]&7: &r"
+        
+        plugin:
+            enabled: "Plugin has been &aenabled&r!"
+            disabled: "Plugin has been &cdisabled&r!"
+            
+    user:
+        # Use %p as a placeholder for the player name.
+        # Use %s as a placeholder for the secret key.
+        
+        # Message shown when a player does not have permission to use a command.
+        no-permission: "&cYou don't have permission to use this command!"
+        player-not-found: "&cThe player '%p' wasn't found!"
+        
+        2fa:
+            enabled: "2FA has been &aenabled &rfor &e%p&r!"
+            disabled: "2FA has been &cdisabled &rfor &e%p&r!"
+            secret: "Your secret key is &e%s&r."
+            message: "Please enter your 2FA code before taking action on the server!"
+        
+        login:
+            # Message shown when a player successfully logs in.
+            success: "&aWelcome back &e%p&a, you can now move freely!"
+            # The message shown when a player fails the 2FA check.
+            failure: "&cInvalid credentials, please try again!"
