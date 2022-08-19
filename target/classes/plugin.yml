@@ -1,5 +1,5 @@
 name: UltraAuthenticator
-version: '1.0.0'
+version: '1.1.0'
 main: tech.asmussen.uauth.UltraAuthenticator
 api-version: 1.19
 prefix: uAuth

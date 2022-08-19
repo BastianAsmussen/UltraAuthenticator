@@ -65,7 +65,7 @@ public final class UltraAuthenticator extends JavaPlugin {
 		getPlugin().saveDefaultConfig();
 		
 		// Register commands.
-		Objects.requireNonNull(this.getCommand("uauth"), "Command name is null!").setExecutor(new TFACommand());
+		Objects.requireNonNull(this.getCommand("uauth"), "Command is null!").setExecutor(new TFACommand());
 		
 		// Register events.
 		getPlugin().getServer().getPluginManager().registerEvents(new JoinEvent(), getPlugin());

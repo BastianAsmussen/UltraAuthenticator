@@ -58,7 +58,9 @@ public class TFACommand implements CommandExecutor {
 					UltraAuthenticator.getPlugin().getConfig().set("2fa." + player.getUniqueId() + ".is-verified", false);
 					UltraAuthenticator.getPlugin().saveConfig();
 					
-					UltraAuthenticator.playerSend((Player) sender, tfaEnabled);
+					// Send the message to the command sender.
+					determineType(sender,tfaEnabled);
+					
 					UltraAuthenticator.playerSend(player, tfaSecret);
 					UltraAuthenticator.playerSend(player, tfaMessage);
 					
@@ -68,17 +70,30 @@ public class TFACommand implements CommandExecutor {
 					UltraAuthenticator.getPlugin().getConfig().set("2fa." + player.getUniqueId(), null);
 					UltraAuthenticator.getPlugin().saveConfig();
 					
-					UltraAuthenticator.playerSend((Player) sender, tfaDisabled);
+					// Send the message to the command sender.
+					determineType(sender, tfaDisabled);
 				}
 				
 			} else {
 				
 				assert playerNotFound != null;
 				
-				UltraAuthenticator.playerSend((Player) sender, playerNotFound.replaceAll("%p", args[0]));
+				// Send the message to the command sender.
+				determineType(sender, playerNotFound.replaceAll("%p", args[0]));
 			}
 			
 			return true;
 		}
+	}
+	
+	public static void determineType(CommandSender sender, String message) {
+		
+		if (!(sender instanceof Player)) // If the sender is Console.
+			
+			UltraAuthenticator.consoleSend(message);
+		
+		else // Else, the sender must be a player.
+			
+			UltraAuthenticator.playerSend((Player) sender, message);
 	}
 }

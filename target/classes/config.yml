@@ -11,14 +11,13 @@ messages:
             enabled: "Plugin has been &aenabled&r!"
             disabled: "Plugin has been &cdisabled&r!"
             
+    # Use %p as a placeholder for the player name.
     user:
-        # Use %p as a placeholder for the player name.
-        # Use %s as a placeholder for the secret key.
-        
         # Message shown when a player does not have permission to use a command.
         no-permission: "&cYou don't have permission to use this command!"
         player-not-found: "&cThe player '%p' wasn't found!"
         
+        # Use %s as a placeholder for the secret key.
         2fa:
             enabled: "2FA has been &aenabled &rfor &e%p&r!"
             disabled: "2FA has been &cdisabled &rfor &e%p&r!"
