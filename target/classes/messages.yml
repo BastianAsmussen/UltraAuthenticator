@@ -1,0 +1,52 @@
+console:
+    plugin:
+        # The message sent when the plugin is enabled.
+        enabled: "The plugin is now &aenabled&r."
+        # The message sent when the plugin is disabled.
+        disabled: "The plugin is now &cdisabled&r."
+        
+all:
+    # The prefix that is used for every message.
+    prefix: "&8[&bUltraAuthenticator&8]&7: &r"
+    
+    commands:
+        # Messages used for the help command.
+        help: |-
+            /uauth help &7| &eShows this help message.
+            /uauth toggle <player> &7| &eToggles the two-factor authentication state for a player.
+            /uauth reload &7| &eReloads the plugin configurations.
+            /uauth version &7| &eShows the version of the plugin.
+        # The message sent when the plugin is reloaded.
+        reload: "The plugin has been &ereloaded&r."
+        # Message used for the version command.
+        version: "The server is running &bUltra Authenticator &av%version%r."
+    # The message sent when a player isn't specified.
+    no-player-specified: "&cPlease specify a player!"
+    # The message sent when a player doesn't exist.
+    player-not-found: "&cThe player &e%player% &cwasn't found!"
+    
+player:
+    # The message sent when a player doesn't have permission to perform an action.
+    no-permission: "&cYou don't have permission to do that!"
+
+authentication:
+    # The message sent 2FA is enabled for a player.
+    enabled: "Two-factor authentication has been &aenabled &rfor &e%player%&r."
+    # The message sent 2FA is disabled for a player.
+    disabled: "Two-factor authentication has been &cdisabled &rfor &e%player%&r."
+    # The message sent to a player when they need to authenticate.
+    message: "&cPlease enter the code from your authenticator app before taking any action!"
+    
+    # When 2FA is first enabled for the player, they will be sent this message.
+    first-time: |-
+        Two factor authentication is now &aenabled&r!
+        Please click &a%link% &rand scan the QR code to add your account to your authenticator app.
+        Then, enter the code from your authenticator app in chat to complete the setup.
+        
+    login:
+        # The message sent when a player successfully logs in.
+        success: "&aWelcome back &e%player%&a, you can now move freely."
+        # The message sent when a player fails to log in.
+        failure: "&cInvalid credentials, you have &e%attempts% &cattempts left!"
+        # The message sent when a player fails to log in too many times.
+        too-many-attempts: "&cYou have entered an invalid code too many times, please try again later!"

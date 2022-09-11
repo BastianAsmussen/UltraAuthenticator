@@ -1,7 +1,13 @@
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\UltraAuthenticator.java
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\events\JoinEvent.java
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\events\QuitEvent.java
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\events\ChatEvent.java
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\events\MoveEvent.java
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\commands\TFACommand.java
-E:\Programming\Java\Ultra Authenticator\src\main\java\tech\asmussen\uauth\events\InteractEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\commands\MainCommand.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\ChatEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\core\Config.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\QuitEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\MoveEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\CommandEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\JoinEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\util\Utility.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\core\UltraAuthenticator.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\DamageEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\events\InteractEvent.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\web\WebServer.java
+E:\Programming\Java\UltraAuthenticator_2\src\main\java\tech\asmussen\auth\misc\QR.java

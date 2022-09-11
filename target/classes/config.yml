@@ -1,31 +1,15 @@
-settings:
-    admin-permission: uauth.admin
+server:
+    # Should the server send a prefix before every message? (true/false)
     use-prefix: true
     
-messages:
-    server:
-        # The prefix for all messages.
-        prefix: "&8[&b&luAuth&8]&7: &r"
+    web:
+        # What port should the web-server use?
+        port: 8080
+        # The path (starting from the UltraAuthenticator folder) to the HTML files.
+        path: "/web"
+        # Should the web server send a notification to the console when someone connects? (true/false)
+        verbose: false
         
-        plugin:
-            enabled: "Plugin has been &aenabled&r!"
-            disabled: "Plugin has been &cdisabled&r!"
-            
-    # Use %p as a placeholder for the player name.
-    user:
-        # Message shown when a player does not have permission to use a command.
-        no-permission: "&cYou don't have permission to use this command!"
-        player-not-found: "&cThe player '%p' wasn't found!"
-        
-        # Use %s as a placeholder for the secret key.
-        2fa:
-            enabled: "2FA has been &aenabled &rfor &e%p&r!"
-            disabled: "2FA has been &cdisabled &rfor &e%p&r!"
-            secret: "Your secret key is &e%s&r."
-            message: "Please enter your 2FA code before taking action on the server!"
-        
-        login:
-            # Message shown when a player successfully logs in.
-            success: "&aWelcome back &e%p&a, you can now move freely!"
-            # The message shown when a player fails the 2FA check.
-            failure: "&cInvalid credentials, please try again!"
+    authentication:
+        # How many attempts should a player have to enter the correct code before they are kicked?
+        number-of-attempts: 3

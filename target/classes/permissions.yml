@@ -1,0 +1,4 @@
+# The permission used to manage the plugin.
+admin-permission: uauth.admin
+# The permission used to use the UltraAuthenticator.
+use-permission: uauth.use
