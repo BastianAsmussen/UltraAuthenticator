@@ -32,7 +32,14 @@ public class MainCommand extends Utility implements CommandExecutor {
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {
 		
-		// TODO: Implement permission checks.
+		if (!sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("use-permission"), "Permission is null!"))) {
+			
+			String noPermission = messageConfig.getString("all.no-permission");
+			
+			determineAndSend(sender, noPermission);
+			
+			return true;
+		}
 		
 		if (args.length == 0 || args[0].equalsIgnoreCase("help")) {
 			
@@ -40,7 +47,7 @@ public class MainCommand extends Utility implements CommandExecutor {
 			
 		} else if ("reload".equalsIgnoreCase(args[0])) {
 			
-			if (sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("uauth.admin"), "Permission is null!"))) {
+			if (sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("admin-permission"), "Permission is null!"))) {
 				
 				reloadConfigs();
 				
@@ -57,7 +64,7 @@ public class MainCommand extends Utility implements CommandExecutor {
 			
 		} else if ("toggle".equalsIgnoreCase(args[0])) {
 			
-			if (!sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("uauth.admin"), "Permission is null!"))) {
+			if (!sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("admin-permission"), "Permission is null!"))) {
 				
 				String noPermission = messageConfig.getString("all.no-permission");
 				
@@ -168,7 +175,7 @@ public class MainCommand extends Utility implements CommandExecutor {
 			
 		} else if ("version".equalsIgnoreCase(args[0])) {
 			
-			if (sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("uauth.admin"), "Permission is null!"))) {
+			if (sender.hasPermission(Objects.requireNonNull(permissionConfig.getString("admin-permission"), "Permission is null!"))) {
 				
 				determineAndSend(sender, Objects.requireNonNull(messageConfig.getString("all.commands.version"), "Message is null!").replaceAll("%version%", UltraAuthenticator.VERSION));
 				
